@@ -1,0 +1,21 @@
+{
+  "name": "tiny-watcher",
+  "version": "1.0.0",
+  "description": "implement a small file watcher that you can do something when file changes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "tiny-watcher": "bin/tiny-watcher.js"
+  },
+  "keywords": [
+    "watch",
+    "file"
+  ],
+  "author": "Yao Chang",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^1.1.0"
+  }
+}

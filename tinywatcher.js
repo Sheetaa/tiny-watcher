@@ -1,0 +1,1 @@
+/Users/baidu/Documents/temp/tiny-watcher/bin/tinywatcher.js
