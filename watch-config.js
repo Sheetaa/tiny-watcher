@@ -6,10 +6,11 @@
 
 // 全局过滤器
 exports.globalFilters = {
-    ignoreNodeModules: '!(node_modules/*|*/node_modules/*)',
-    ignoreVCSFiles   : '!(*).(git|svn|idea)/*',
-    ignoreIDEFiles   : '!(*).(DS_Store)',
-    ignoreNodeConfig : '!(*)(.gitignore|packkage.json|*.md)'
+    ignoreNodeModules: '!*/node_modules/*',
+    ignoreVCSFiles   : '!*.(git|svn|idea)/*',
+    ignoreIDEFiles   : '!*.DS_Store',
+    ignoreNodeConfig : '!*.(gitignore|md)',
+    ignoreNpm: '!*/package.json'
 };
 
 // 常用过滤器
@@ -18,12 +19,10 @@ exports.commonFilters = {
     mediaFiles: '*.(gif|jpg|jpeg|png|swf|fla|mp3)'
 };
 
-exports.filters = {
-    includeFilters: [
-    ],
-    excludeFilters: [
-    ]
-};
+exports.filters = [
+    '*.tpl',
+    '*.src'
+];
 
 exports.fnList = [
     function () {
